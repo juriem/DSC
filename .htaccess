@@ -1,0 +1,25 @@
+RewriteEngine On
+
+
+RewriteCond %{REQUEST_URI} /robots.txt
+RewriteRule ^(.*)$ index.php?url=/_modules/seo/robots [L]
+
+
+RewriteCond %{REQUEST_URI} /files/
+RewriteRule ^(.*)$ index.php?url=/_files/$1 [L]
+
+# Processing styles  
+#RewriteCond %{REQUEST_URI} /css/
+#RewriteRule ^(.*)$ index.php?url=/_files/files/_global_/$1 [L]
+
+# Processing images 
+RewriteCond %{REQUEST_URI} /images/
+RewriteRule ^(.*)$ index.php?url=/_files/files/_global_/$1 [L]
+
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php?url=$1 [L]
+
+
+

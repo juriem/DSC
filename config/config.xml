@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<database>
+		<host>localhost</host>
+		<user>root</user>
+		<database>waiting_list</database>
+		<driver>mysql</driver>
+	<password></password><table_prefix></table_prefix></database>
+	<system>
+		<use_dbsession>yes</use_dbsession>
+		<debug_mode>no</debug_mode>
+		<auto_create_tokens>yes</auto_create_tokens>
+		<timezone>Europe/Tallinn</timezone>
+		<encode_scripts>no</encode_scripts>
+		<app_id>150926f939fc27e6facc2a4ec9e64920-4d4957b83bff6-1e2a952b6a2ce5f81f232f6b10e995ac</app_id>
+	</system>
+	<security>
+		<password>Developer</password>
+	</security>
+</configuration>
