@@ -88,13 +88,17 @@ session_start();
 //}
 
 
-// Processing cron access
-// Checking if called from commandline
-//TODO: move to cron module
+/*
+ * Checking if use command line. Used only for cron module 
+ */
+
 if (isset($argv)){
 	App::executeModule('cron', 'default/_default');
 	exit; 
 }
+
+
+
 
 /*
  * Init URL
